@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.container_search_car{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 0 70px;
+  background-color: #fff;
+  color: black; 
+}
+
+.container_car_and_parts{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+  background-color: #ebecef;
+  border: 1px solid black;
+}
+
+.panel_cars_and_parts{
+  display: flex;
+  justify-content: center;
+}
+
+.panel_cars_and_parts p{
+  margin: 0 1rem 0;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.panel_cars_and_parts:hover{
+  cursor: pointer;
+}
+
+.panel_cars_and_parts p:hover{
+  color: #535353;
+}
+
+.car_passenger_panel, .car_truck_panel, .car_hgv_panel, .car_parts_panel{
+  background-color: #f8f8fd;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.car_passenger_panel{
+  border-left: 0;
+}
+
+.car_parts_panel{
+  border-right: 0;
+}
+
+.car_passenger_panel.active, .car_truck_panel.active, .car_hgv_panel.active, .car_parts_panel.active{
+  background-color: #ebecef;
+  border: 0;
+}
+
+.car_panel_info{
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.car_row{
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.car_group {
+  margin: 1rem;
+  width: 50%;
+}
+
+.car_panel_info label {
+  display: block;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.car_panel_info input{
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.car_input_group{
+  display: flex;
+}
+
+.car_panel_info input[type='submit'] {
+  padding: 10px 20px;
+  background-color: #6b6b6b;
+  color: white;
+  border: none;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.car_panel_info input[type='submit']:hover {
+  background-color: #616161;
+}
+
+/* Samochody wyszukane */
+
+.container_search_announcement{
+  padding-top: 70px;
+}
+
+.search_announcement{
+  padding: 30px 0 30px;
+  background-color: #F7F8FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_announcement_row input{
+  padding: 10px;
+  width: 230px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.search_announcement_row select input {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #ccc;
+  color: black;
+}
+
+.search_announcement_row input:hover{
+  cursor: pointer;
+}
+
+
+.search_announcement_car{
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_announcement_search{
+  border: 1px solid black;
+  
+}
+
+.search_announcement_cars{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search_results h1{
+  text-align: center;
+}
+
+.car_product{
+  text-align: center;
+  margin: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px 20px 40px;
+  border-radius: 10px;
+  transition: .3s;
+}
+.car_product:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.car_product_img{
+  display: flex;
+  justify-content: center;
+}
+.car_product_img img{
+  width: 250px;
+  height: 190px;
+}
+
+.car_product_name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  color: black;
+  padding: 2px;
+}
+
+.car_product h3, .car_product_price h3{
+  font-size: 1.7rem;
+  width: 200px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+  .container_search_car {
+    padding: 40px 0;
+  }
+
+  .container_car_and_parts {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .car_group {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container_search_car,
+  .container_car_and_parts,
+  .car_panel_info,
+  .car_row,
+  .car_group,
+  .car_product,
+  .car_product_img,
+  .car_product_name,
+  .search_announcement {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .container_car_and_parts{
+    padding: 0;
+  }
+
+  .car_parts_panel, .car_passenger_panel, .car_hgv_panel, .car_truck_panel{ 
+    border-left: 0; border-right: 0;
+  }
+
+  .panel_cars_and_parts{
+    width: 100%;
+    flex-direction: column;
+  }
+
+}

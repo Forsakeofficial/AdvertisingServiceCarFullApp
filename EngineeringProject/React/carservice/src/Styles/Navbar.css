@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+nav{
+    width: 100%;
+    font-family: 'Titillium Web';
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #ab0303;
+    color: #fff;
+    z-index: 100;
+    padding: 0 4rem 0 4rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
+}
+
+.navbar_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar_menu a{
+    margin: 0 0.8rem 0 0.8rem;
+}
+
+.navbar_menu a:hover{
+    cursor: pointer;
+    color: #b9b9b9;
+    transition: 0.5s;
+}
+
+.navbar_logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.navbar_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.navbar_panel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .navbar_menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #5f0d0d;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.4s;
+        z-index: 100;
+    }
+
+    .navbar_menu.active{
+        left: 0;
+    }
+
+    .navbar_items, .navbar_panel{
+        display: flex;
+        margin: 2rem;
+        padding: 2rem;
+        flex-direction: column;
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navbar_logo{
+        display: none;
+    }
+}

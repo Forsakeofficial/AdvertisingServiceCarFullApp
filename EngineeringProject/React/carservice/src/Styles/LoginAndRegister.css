@@ -1,0 +1,137 @@
+.container_account_login_register{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../Images/main_photo.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.panel_login_and_register{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 1000px;
+  background-color: #f8f8fd;
+  border-radius: 3px;
+  padding-bottom: 3rem;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.panel_login_and_register_selection{
+  display: flex;
+  width: 100%;
+  background-color: #ebecef;
+}
+
+.panel_login_user:hover, .panel_register_user:hover{
+  cursor: pointer;
+  color: gray;
+}
+
+.panel_login_user.active:hover, .panel_register_user.active:hover{
+  color: black;
+}
+
+.panel_login_user{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 2rem;
+  width: 50%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.panel_register_user{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 2rem;
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+
+.panel_form{
+  padding-top: 3rem;
+}
+
+.panel_login_user.active, .panel_register_user.active{
+  border-bottom: none;
+  background-color: #f8f8fd;
+}
+
+.panel_form label{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.panel_form form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel_form input[type="password"], .panel_form input[type="text"]{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.panel_form input[type="submit"]{
+  background-color: #ab0303;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.panel_form form input[type="submit"]:hover{
+  background-color: #b31818;
+}
+
+.error{
+  color: red;
+  text-align: center;
+}
+
+.success{
+  color: green;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .panel_login_and_register {
+    width: 90%;
+    height: auto;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .panel_login_and_register_selection{
+    flex-direction: column;
+  }
+
+  .panel_login_user,
+  .panel_register_user {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .panel_form {
+    padding-top: 2rem;
+  }
+
+  .panel_form input{
+    width: 100%;
+  }
+}
